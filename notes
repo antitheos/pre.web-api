@@ -1,0 +1,5 @@
+dotnet publish -c Release -r win-x64 --self-contained -p:PublishReadyToRun=true
+dotnet publish -r win-x64 --self-contained
+
+net stop was /y
+net start w3svc

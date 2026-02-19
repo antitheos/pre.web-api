@@ -1,0 +1,59 @@
+# Build results
+[Bb]in/
+[Oo]bj/
+out/
+
+# .NET user-specific files
+*.user
+*.rsuser
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Visual Studio
+.vs/
+
+# Rider
+.idea/
+*.sln.iml
+
+# VS Code
+.vscode/
+
+# Test and coverage results
+[Tt]est[Rr]esult*/
+*.trx
+*.coverage
+*.coveragexml
+coverage/
+
+# NuGet
+*.nupkg
+*.snupkg
+**/[Pp]ackages/*
+!**/[Pp]ackages/build/
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# Logs
+*.log
+logs/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# ASP.NET / Web publish output
+publish/
+wwwroot/dist/
+wwwroot/lib/
+
+# Local app settings / secrets
+appsettings.Development.json
+appsettings.Local.json
+secrets.json
+
+# Node modules (if frontend tooling is used)
+node_modules/
+appsettings.json
