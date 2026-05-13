@@ -17,4 +17,13 @@ app.MapGet(
     async (PIRDB db) => await db.siteStatuses.FromSqlRaw("EXEC dbo.pri_site_status").ToListAsync()
 );
 
+app.MapGet(
+    "/modality/{siteName}",
+    async (PIRDB db, string siteName) =>
+    {
+        var results = await db.siteModalityStatuses.FromSqlRaw("EXEC dbo.pri_site_modality_status").ToListAsync();
+        return results.Where(m => m.siteName == siteName).ToList();
+    }
+);
+
 app.Run();
