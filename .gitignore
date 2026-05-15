@@ -57,3 +57,4 @@ secrets.json
 # Node modules (if frontend tooling is used)
 node_modules/
 appsettings.json
+pri.web-api.csproj.lscache

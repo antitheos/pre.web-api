@@ -26,4 +26,14 @@ app.MapGet(
     }
 );
 
+app.MapGet(
+    "/modality",
+    async (PIRDB db) =>
+    {
+        var results = await db.siteModalityStatuses.FromSqlRaw("EXEC dbo.pri_site_modality_status").ToListAsync();
+        return results.ToList();
+
+    }
+);
+
 app.Run();

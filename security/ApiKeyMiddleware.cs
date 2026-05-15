@@ -1,7 +1,7 @@
+using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using System.Threading.Tasks;
 
 public class ApiKeyMiddleware
 {
@@ -28,7 +28,7 @@ public class ApiKeyMiddleware
 
         var apiKey = appSettings.GetValue<string>(APIKEYNAME);
 
-        if (!apiKey.Equals(extractedApiKey))
+        if (apiKey is null || !apiKey.Equals(extractedApiKey))
         {
             context.Response.StatusCode = 401;
             await context.Response.WriteAsync("Unauthorized client. (Using ApiKeyMiddleware)");
