@@ -46,6 +46,7 @@ Thumbs.db
 
 # Workspace task register — never checked in
 .amb-todo/
+.amb-tests/
 
 # ASP.NET / Web publish output
 publish/

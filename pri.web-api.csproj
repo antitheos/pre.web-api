@@ -11,6 +11,7 @@
     <None Remove="sql\status.sql" />
     <None Remove="sql\status_alter.sql" />
     <None Remove="sql\pri_site_daily_ingest.sql" />
+    <None Remove="sql\pri_site_volume.sql" />
   </ItemGroup>
 
   <ItemGroup>
@@ -21,6 +22,9 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Content>
     <Content Include="sql\pri_site_daily_ingest.sql">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="sql\pri_site_volume.sql">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
